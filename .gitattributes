@@ -1,0 +1,9 @@
+# Line-ending policy for the MelonMix port.
+# The emulator core assumes a Unix-ish layout; keep C/C++ sources LF so the
+# NDK/CMake build doesn't choke on CRLF. Batch files must stay CRLF for cmd.exe.
+*.cpp  text eol=lf
+*.h    text eol=lf
+*.c    text eol=lf
+*.cc   text eol=lf
+*.hpp  text eol=lf
+*.bat  text eol=crlf
